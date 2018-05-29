@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mini exo : 07</title>
+<style>
+    body {
+         background: rgb(31, 31, 248);
+    }
+     #menu { 
+      
+       list-style-type: none;
+       margin: 10px;
+    }
+
+    #menu li {
+        background: lightcyan;
+        float: left;
+        margin-right: 10px;
+        font-size: 1.5em;
+    }
+
+    #menu li a {
+        text-decoration: none;
+    } 
+    
+    #menu li a:hover {
+        background: orangered;
+        color: white;
+    }
+    form {
+        background: lightcyan;
+        border: thin solid #333;
+        padding: 5px;
+    }
+    fieldset {
+        border: thin solid #333;
+    }
+   
+</style>
+</head>
+    <body>
+        <h1>Un formulaire d'iscription</h1> 
+        <form action="fichier.php" method="POST">
+            <fieldset>
+            <legend>Identité</legend>
+                <label for="nom">Nom</label  >
+                    <input type="nom" name="envoyez" required>
+                <label for="prénom">Prénom</label >
+                    <input type="none" name="none" required>
+            </fieldset>
+            <fieldset>
+            <legend>Votre adresse postale</legend>
+                <label for="adresse">Adresse</label>
+                    <input type="text" name="adresse" placeholder="adresse postale" required >
+                <label for="code_postal">Code postale</label>
+                    <input type="text" name="code_postale"    placeholder="code postale">
+                <label for="ville">Ville</label>
+                    <input type="text" name="ville" placeholder="ville">
+            </fieldset>
+            <fieldset>
+            <legend>Votre email</legend>
+                <label for="email">Adresse email</label>
+                    <input type="email" name="email">
+            </fieldset>
+            <fieldset>
+            <legend>Sexe</legend> <!-- des boutos radio le 1er est coché -->  
+                <label for="sexe">Homme</label>
+                    <input type="radio" name="sexe" value="homme" checked>
+                <label for="sexe">Femme</label>
+                    <input type="radio" name="sexe" value="Femme">                      
+            </fieldset>
+            <fieldset>
+            <legend>Avez-vous du matériel ?</legend> 
+                <label for="matos">J'ai des aiguilles</label>
+                    <input type="checkbox" name="matos" value="aiguille">
+                <label for="matos">J'ai de la laine</label>
+                    <input type="checkbox" name="matos" value="laine">
+                <label for="matos">Non je n'est rien</label> 
+                    <input type="checkbox" name="matos" value="Non">         
+            </fieldset>
+            <fieldset>
+            <legend>Faites-vous du sport ?</legend>
+                <label for="usage">Votre usage</label>
+                <select name="usage">
+                    <option value="0">Choissisez votre niveau</option>
+                    <option value="jamais">Jamais</option>
+                    <option value="un peu">Un peu</option>
+                    <option value="parfoit">Parfoit</option>
+                    <option value="toujours">Tous les jours</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                    <legend>Votre commentaire</legend>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" row="8" cols="50">Dites-nous en un peu plus si vous le souhaitez...</textarea>    
+            </fieldset>
+            <fieldset>
+                    <legend>Inscrivez-vous en envoyant le formulaire</legend>
+                    <input type="submit" name="insrivez-vous" value="Inscrivez-vous">
+                    <input type="submit" name="effacer" value="Effacer">
+                    <small>* obligatoire</small>
+            </fieldset>
+          </form> 
+     </body>
+</html>
