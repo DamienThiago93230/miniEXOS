@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mini exo : 15</title>
+    <!-- <link href="css/style10.css" rel="stylesheet"> -->
+    <style>
+        /* couleurs */
+         .vert {
+             background: greenyellow;
+         }
+
+         .orange {
+             background: orangered;
+         }
+
+         .bleu {
+             background: rgb(13, 152, 199);
+             border: 2px solid black;
+         }
+
+         .centre_padding {
+             padding: 70px 0;
+             /* text-align: center; */
+         }
+
+         .centre_lineheight {
+             height: 300px;
+             line-height: 300px;            
+         }
+
+         /* si il y a plusieurs ligne ajoutont le code suivant au p */
+         .centre_lineheight p {
+             line-height: 1.5;
+             display: inline-block; 
+             vertical-align: middle;           
+         }
+
+
+         
+
+    </style>
+</head>
+    <body>
+        <h2>Centrée verticalement en utilisant <code>padding</code></h2>  
+        <div class="centre_padding bleu">
+           <p>Je suis centré verticalement</p>
+        </div> 
+        <hr>
+        <!-- utilisation de line-height avec une valeur égale a la hauteur du bloc -->
+        <h2>Centrée verticalement en utilisant <code>line-height</code></h2>  
+        <div class=" centre_lineheight orange">
+           <p>Je suis centré verticalement</p>
+        </div>
+        <hr>
+        <h2>Et il y a plusieur éléments?</h2>  
+        <div class="centre_lineheight vert">
+           <p>Je suis centré verticalement et j'ai plusieurs éléments</p>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat ab, animi rerum qui voluptatum cupiditate unde velit, eius consequuntur dolore, nemo autem soluta adipisci delectus ut quod placeat aliquam assumenda!</p>
+           <p>Coucou</p>
+        </div>         
+    </body>
+</html> 

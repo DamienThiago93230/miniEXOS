@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mini exo : 14</title>
+    <!-- <link href="css/style10.css" rel="stylesheet"> -->
+    <style>
+        /* couleurs */
+         .vert {
+             background: greenyellow;
+             border: 1px solid black;
+         }
+
+         .orange {
+             background: orangered;
+             border: 1px solid black;
+         }
+
+         .bleu {
+             background: rgb(13, 152, 199);
+         }
+
+         .image1 {
+             float: right;
+         }
+
+         .image2 {
+             float: right;
+         }
+
+         .clearfix {
+             overflow: auto;
+         }
+
+         .clearright {
+             clear: right;
+         }
+
+    </style>
+</head>
+    <body>
+        <h2>Dans cet exemple l'image est plus grande que l'élément qui le contient, et elle flotte donc elle sort du bloc</h2>
+
+        <div class="vert">
+            <!-- l'image est dans la div mais elle est trop grande et donne l'mpréssion de sortir de la div -->
+            <img src="img/montagne.jpg" alt="montagne" class="image1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae dolor nemo delectus unde sit dolorum, reprehenderit eos dicta maxime nesciunt distinctio possimus totam ab nostrum corrupti voluptatibus necessitatibus amet.
+        </div>
+
+        <p class="clearright">On ajoute une class clearfix avec overflow: auto a l'élément pour régler le problème</p>
+               
+        <div class="orange clearfix">
+            <img src="img/montagne.jpg" alt="montagne" class="image2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae dolor nemo delectus unde sit dolorum, reprehenderit eos dicta maxime nesciunt distinctio possimus totam ab nostrum corrupti voluptatibus necessitatibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae dolor nemo delectus unde sit dolorum, reprehenderit eos dicta maxime nesciunt distinctio possimus totam ab nostrum corrupti voluptatibus necessitatibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae dolor nemo delectus unde sit dolorum, reprehenderit eos dicta maxime nesciunt distinctio possimus totam ab nostrum corrupti voluptatibus necessitatibus amet.
+        </div>
+          
+    </body>
+</html> 
